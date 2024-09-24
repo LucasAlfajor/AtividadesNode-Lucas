@@ -37,12 +37,12 @@ listaDeViagens.slice(1,2);
 console.log(listaDeViagens);
 
 var NomeComprador = entrada("Qual seu nome? ");
+console.log(`Olá senhor(a) ${NomeComprador} seja bem vindo!`);
 var IdadeComprador = entrada("Qual é a sua idade? ");
 
 if (IdadeComprador < 18){
   console.log("Por ser menor de idade você não tem direito a passagem!!")
 }
-
 if (IdadeComprador >= 18){
   console.log("Você tem direito a essa passagem!!")
 }
