@@ -1,3 +1,4 @@
+const { Console } = require('console');
 const prompt = require('prompt-sync');
 const entrada = prompt();
 
@@ -19,6 +20,26 @@ console.log(
 
 console.log(`Oi eu sou ${nomeCompleto} meu ano de nascimento é ${anoNascimento} minha idade é ${idade}`);
 
+const loginCerto = "Lucas";
+const senhaCerto = 2103;
+console.log("------------------------------------------------------------------------");
+console.log("-AGÊNCIA DE VIAGENs✈︎✈︎✈︎");
+console.log("------------------------------------------------------------------------");
+console.log("Faça seu login:");
+
+var login = entrada("Digite seu login: ");
+var senha = entrada("Digite sua senha: ");
+
+while(login != loginCerto){
+  console.log("Login Incorreto!!");
+  login = entrada("Digite seu login novamente: ")
+}
+
+while(senha != senhaCerto){
+  console.log("Senha Incorreta!");
+  login = entrada("Digite sua senha novamente: ");
+}
+  
 const listaDeViagens = new Array(
  `Disney`,
   `França`,
