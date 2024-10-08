@@ -23,9 +23,9 @@ console.log(`Oi eu sou ${nomeCompleto} meu ano de nascimento é ${anoNascimento}
 const loginCerto = "Lucas";
 const senhaCerto = 2103;
 console.log("------------------------------------------------------------------------");
-console.log("-AGÊNCIA DE VIAGENs✈︎✈︎✈︎");
+console.log("                           🌎AGÊNCIA DE VIAGENS🌎");
 console.log("------------------------------------------------------------------------");
-console.log("Faça seu login:");
+console.log("Faça seu login");
 
 var login = entrada("Digite seu login: ");
 var senha = entrada("Digite sua senha: ");
@@ -39,7 +39,13 @@ while(senha != senhaCerto){
   console.log("Senha Incorreta!");
   login = entrada("Digite sua senha novamente: ");
 }
-  
+
+console.log("");
+console.log("Seja Bem-Vindo(a)!");
+console.log("");
+console.log("Abaixo estão nossos destinos disponíveis para viagem:");
+console.log("");
+
 const listaDeViagens = new Array(
  `Disney`,
   `França`,
@@ -57,7 +63,7 @@ console.log(listaDeViagens);
 listaDeViagens.slice(1,2);
 console.log(listaDeViagens);
 
-var NomeComprador = entrada("Qual seu nome? ");
+var NomeComprador = entrada("Para que consigamos te atender melhor nos informe seu nome: ");
 console.log(`Olá senhor(a) ${NomeComprador} seja bem vindo!`);
 var IdadeComprador = entrada("Qual é a sua idade? ");
 
@@ -67,3 +73,6 @@ if (IdadeComprador < 18){
 if (IdadeComprador >= 18){
   console.log("Você tem direito a essa passagem!!")
 }
+
+console.log("");
+console.log("Muito Obrigado por acessar nosso site! Volte Sempre!");
